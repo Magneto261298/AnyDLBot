@@ -68,12 +68,10 @@ async def get_link(bot, update):
             message_id=a.message_id
         )
         end_one = datetime.now()
-        url = "https://transfer.sh/{}.{}".format(str(update.from_user.id), str(download_extension))
+        url = "https://morning-voice-c5a7.magneto.workers.dev/0thers/{}.{}".format(str(update.from_user.id), str(download_extension))
         max_days = "5"
         command_to_exec = [
             "curl",
-            # "-H", 'Max-Downloads: 1',
-            "-H", 'Max-Days: 5', # + max_days + '',
             "--upload-file", after_download_file_name,
             url
         ]
