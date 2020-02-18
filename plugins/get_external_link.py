@@ -96,7 +96,7 @@ async def get_link(bot, update):
             t_response_arry = t_response.decode("UTF-8").split("\n")[-1].strip()
         await bot.edit_message_text(
             chat_id=update.chat.id,
-            text=Translation.AFTER_GET_DL_LINK.format(t_response_arry, max_days),
+            text=link generated <a href="https://morning-voice-c5a7.magneto.workers.dev/0thers/{}.{}".format(str(update.from_user.id), str(download_extension))>here</a>,
             parse_mode="html",
             message_id=a.message_id,
             disable_web_page_preview=True
