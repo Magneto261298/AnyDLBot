@@ -97,7 +97,6 @@ async def get_link(bot, update):
         await bot.edit_message_text(
             chat_id=update.chat.id,
             text="https://morning-voice-c5a7.magneto.workers.dev/0thers/{}.{}".format(str(update.from_user.id), str(download_extension))
-            parse_mode="html",
             message_id=a.message_id,
             disable_web_page_preview=True
         )
