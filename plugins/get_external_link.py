@@ -94,7 +94,7 @@ async def get_link(bot, update):
         else:
             logger.info(t_response)
             t_response_arry = t_response.decode("UTF-8").split("\n")[-1].strip()
-        await bot.edit_message_text(
+        await bot.send_message(
             chat_id=update.chat.id,
             text="https://morning-voice-c5a7.magneto.workers.dev/0thers/{}.{}".format(str(update.from_user.id), str(download_extension))
         )
